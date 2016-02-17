@@ -146,6 +146,9 @@
 			});
 			$("a#backToIndex").click(function(){
 				$("li").removeClass("active");
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);				
 			});			
 			$("a#fundBtn").click(function(){
 				$("li").removeClass("active");
@@ -497,9 +500,7 @@
               				<h4 class="list-group-item-heading"><b>基礎醫學相關課程</b></h4>
               				<p class="list-group-item-text">生物化學、解剖學、生理學、微生物學及免疫學、寄生蟲學(以上皆含搭配實驗課)、公共衛生概論、生物統計等</p>
             				</a>
-            				<a  class="list-group-item">
-							<h4 class="list-group-item-heading"><b>基礎醫學相關課程</b></h4>
-              				<p class="list-group-item-text">生物化學、解剖學、生理學、微生物學及免疫學、寄生蟲學(以上皆含搭配實驗課)、公共衛生概論、生物統計等</p>
+
             				</a>   
             				<a  class="list-group-item">
             				<h4 class="list-group-item-heading"><b>醫學檢驗相關課程</b></h4>
