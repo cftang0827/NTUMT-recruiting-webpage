@@ -1,0 +1,48 @@
+<tr class="info">
+   <td>臨床鏡檢學實習</td>
+   <td>3</td>
+</tr>
+<tr class="info">
+   <td>臨床生理學實習</td>
+   <td>2</td>
+</tr>
+<tr class="info">
+   <td>臨床生化學實習</td>
+   <td>3</td>
+</tr>
+<tr class="info">
+   <td>臨床細菌及黴菌學實習</td>
+   <td>4</td>
+</tr>
+<tr class="info">
+   <td>臨床血清免疫學實習</td>
+   <td>1</td>
+</tr>
+<tr class="info">
+   <td>血清免疫學分子檢驗實習</td>
+   <td>1</td>
+</tr>
+<tr class="info">
+   <td>臨床血液學實習</td>
+   <td>3</td>
+</tr>
+<tr class="info">
+   <td>血庫實習</td>
+   <td>1</td>
+</tr>
+<tr class="info">
+   <td>臨床病毒學實習</td>
+   <td>2</td>
+</tr>
+<tr class="info">
+   <td>病理學實習</td>
+   <td>1</td>
+</tr>
+<tr class="info">
+   <td>病毒學基礎及生物技術實驗</td>
+   <td>1</td>
+</tr>
+<tr class="info">
+   <td>細菌生物技術學實驗</td>
+   <td>1</td>
+</tr>

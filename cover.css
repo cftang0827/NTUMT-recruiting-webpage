@@ -1,0 +1,324 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #F5F5DC;
+  font-family: Microsoft JhengHei;
+}
+body {
+  color: #696969;
+  text-align: center;
+  font-family: Microsoft JhengHei;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+/*  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.site-wrapper-inner1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #696969; /* IE8 proofing */
+  font-family: Microsoft JhengHei;
+  
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #696969;
+  
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #696969;
+  border-bottom-color: #696969;
+}
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+a#homeBtn{
+font-size: 15px;  
+}
+li#barItem1{
+  font-size: 12px;
+}
+li#barItem2{
+  font-size: 12px;
+}  
+li#barItem3{
+  font-size: 12px;
+}  
+li#barItem4{
+  font-size: 12px;
+}  
+li#barItem5{
+  font-size: 12px;
+}    
+li#barItem6{
+  font-size: 12px;
+}  
+li#barItem7{
+  font-size: 12px;
+}  
+li#barItem8{
+  font-size: 12px;
+}  
+}
+
+@media (min-width: 1200px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+a#homeBtn{
+font-size: 20px;  
+}
+li#barItem1{
+  font-size: 17px;
+}
+li#barItem2{
+  font-size: 17px;
+}  
+li#barItem3{
+  font-size: 17px;
+}  
+li#barItem4{
+  font-size: 17px;
+}  
+li#barItem5{
+  font-size: 17px;
+}    
+li#barItem6{
+  font-size: 17px;
+}  
+li#barItem7{
+  font-size: 17px;
+}  
+li#barItem8{
+  font-size: 17px;
+}  
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: black; /* IE8 proofing */
+  /* color: rgba(255,255,255,.5); */
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 400px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+	font-color:black;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+div#more{
+
+  color: #696969;
+  text-align: center;
+  font-family: Microsoft JhengHei;
+  font-size: 150%;	
+
+}
+
+
+
+
+
+div.well{
+
+	width : 500px;
+
+	font-family: Microsoft JhengHei;
+	font-size:120%;
+	
+}
+
+a#backToHome1{
+  font-size: 70%;
+  text-align: right;
+}
+
+a#backToHome2{
+  font-size: 70%;
+  text-align: right;
+}
+
+
+/*nav#navBar1{
+  background-color: #ADD8E6;
+  height: 6%;
+
+
+}
+*/
+
+
+.navbar-custom {
+    background-color:#229922;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+
+
+

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1; ">
+
+	
+
+ 	<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>台大醫技系--高中生專區</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="./jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<!-- // <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+<!-- <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script> -->
+<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> -->
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]> -->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- <![endif] -->
+	<script >
+
+
+
+		$(document).ready(function(){
+			
+			$("h1#indexId").hide();
+			$("h3#indexId").hide();
+			$("a#indexIdBtn").hide();
+			$("img#indexId").hide();
+			$("h1#indexId").fadeIn(3500);
+			$("a#indexIdBtn").fadeIn(3500);
+			$("h3#indexId").fadeIn(6000);
+			$("img#indexId").fadeIn(4000);
+			   
+			$("a#indexIdBtn").click(function(){
+                $('html, body').animate({
+                    scrollTop: $("#more").offset().top
+                }, 500);					
+				$("a#WhyBtn").hide();
+				$("p#morePage").hide();
+				$("a#backToHome1").hide();
+				$("p#morePage").fadeIn(2000);
+				$("a#backToHome1").fadeIn(3000);
+				$("a#WhyBtn").fadeIn(3000);
+			});
+
+			$("li#barItem1").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem1").addClass("active");				
+			});
+			$("li#barItem2").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem2").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#why").offset().top
+                }, 500);				
+			});			
+			$("li#barItem3").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem3").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#feature").offset().top
+                }, 500);				
+			});
+			$("li#barItem4").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem4").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#teach").offset().top
+                }, 500);				
+			});	
+			$("li#barItem5").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem5").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#teacher").offset().top
+                }, 500);				
+			});	
+			$("li#barItem6").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem6").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#fund").offset().top
+                }, 500);				
+			});		
+			$("li#barItem7").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem7").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#graduate").offset().top
+                }, 500);				
+			});	
+			$("li#barItem8").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem8").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#entry").offset().top
+                }, 500);				
+			});	
+			$("a#WhyBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem2").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#why").offset().top
+                }, 500);					
+			
+			});
+			$("a#featureBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem3").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#feature").offset().top
+                }, 500);				
+			});
+			$("a#teachBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem4").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#teach").offset().top
+                }, 500);				
+			});
+
+			$("a#teacherBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem5").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#teacher").offset().top
+                }, 500);				
+			});
+			$("a#backToIndex").click(function(){
+				$("li").removeClass("active");
+			});			
+			$("a#fundBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem6").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#fund").offset().top
+                }, 500);				
+			});
+
+
+			$("a#graduateBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem7").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#graduate").offset().top
+                }, 500);				
+			});
+			$("a#entryBtn").click(function(){
+				$("li").removeClass("active");
+				$("li#barItem8").addClass("active");
+                $('html, body').animate({
+                    scrollTop: $("#entry").offset().top
+                }, 500);				
+			});
+			// $("button#course_more").click(function(){
+
+   //              $('html, body').animate({
+   //                  scrollTop: $("#course_more").offset().top
+   //              }, 500);				
+			// });			
+
+
+			$("a#homeBtn").click(function(){
+				$("li").removeClass("active");
+			});				
+
+			// $("div#feature").scroll(function(event){
+			// 	$("li").removeClass("active");
+			// 	$("li#barItem3").addClass("active");
+			// 	$alert(event.pageX);				
+			// });
+
+		
+   });
+
+		
+	</script>  
+
+    
+
+  </head>
+
+
+  <body>
+  <script >
+  $('.navbar-collapse a').click('li', function() {
+		var navbar_toggle = $('.navbar-toggle');
+		if (navbar_toggle.is(':visible')) {
+    	navbar_toggle.trigger('click');
+	}});
+
+  </script>
+
+    <nav id = "navBar1" class="navbar navbar-default navbar-fixed-top " role="navigation" >
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="homeBtn" href="#">台大醫技系-高中生專區</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        	
+          		<ul class="nav navbar-nav navbar-right" >
+          		
+      				<li id = "barItem1" class="active"><a href="http://www.mc.ntu.edu.tw/department/clsmb/" >回醫技系首頁</a></li>
+	      			<li id = "barItem2" ><a href="#why" data-toggle="collapse" data-target="#navbar.in" >為什麼選擇醫技系</a></li>
+	      			<li id = "barItem3" ><a href="#feature" data-toggle="collapse" data-target="#navbar.in">本系簡介</a></li>
+	      			<li id = "barItem4"><a href="#teach" data-toggle="collapse" data-target="#navbar.in">教學</a></li>	
+	      			<li id = "barItem5"><a href="#teacher" data-toggle="collapse" data-target="#navbar.in">師資</a></li>
+	      			<li id = "barItem6"><a href="#fund" data-toggle="collapse" data-target="#navbar.in">校內外活動&獎學金</a></li>
+	      			<li id = "barItem7"><a href="#graduate" data-toggle="collapse" data-target="#navbar.in">畢業出路</a></li>
+	      			<li id = "barItem8"><a href="#entry" ddata-toggle="collapse" data-target="#navbar.in">入學管道</a></li>
+      			</ul>
+
+      		
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="site-wrapper" >
+        <div class="site-wrapper-inner" id = "home">
+	        <div class="cover-container">
+
+					         	
+				<div class="inner cover" >
+				<br><br>
+				
+					<div class = "row">
+						<div class = "col-xs-12">
+							<!-- <div class = "tab-content"> -->
+								<div>
+									<div>							
+										<h1 id = "indexId" class="cover-heading" style="font-size:250%;">
+									<!-- 	<img src="title.png" style="width: 75%;height: auto;"> -->
+										醫學為生命創造奇蹟<br><br>
+										醫技為醫學指點迷津<br>
+										</h1>
+										
+										<br><br><br>										
+										<h3 id = "indexId" class="cover-heading" style="font-size:150%;">--國立台灣大學醫學院醫學檢驗暨生物技術學系--</h3> 
+										<!-- <h3 id = "indexId">
+										<img class="img-rounded" id = "indexId" alt="Cinque Terre" src="icon.png"height="70">
+										<img  src="name.png" style="width: 100%;height: auto;" alt="國立台灣大學醫學院醫學檢驗暨生物技術學系" /></h3> -->
+										<a href="#more" id = "indexIdBtn" class="btn btn-lg btn-default" >了解更多</a>	
+
+									</div>	
+								</div>						
+							<!-- </div>  -->
+						</div>
+
+					</div>		
+					
+				</div>
+
+        	</div>
+						<div align="bottom">
+<!-- 								<footer align="right">
+									<p>powered by </p>
+									<a href="http://cooltext.com" target="_top"><img src="http://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
+								</footer> -->
+						</div>        	
+
+      	</div>
+    </div>
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+	
+	
+	
+	
+	<div class="site-wrapper" id = "more">
+		<div class="site-wrapper-inner">
+			<br><br>
+			<div class = "row">
+				<div class = "col-md-12">
+					<h2> 你有沒有想過? </h2>
+					<br>
+					<p id = "morePage"> 人為什麼得癌症?糖尿病、心臟病又是什麼?<br> <br>
+						血液中有什麼東西? 
+						為什麼抽血檢驗可以知道我得了什麼病?<br><br>
+						你有沒有看過造成人類疾病的細菌、病毒長什麼樣子?<br><br>
+						來醫技系，你將有機會了解醫學的奧妙及加入最有意義的醫藥行業。 </p>
+						<br>
+						
+					<a href="#why" id = "WhyBtn" class="btn btn-lg btn-default" ><b>為什麼選擇台大醫技?</b></a>						
+
+					<br><br>
+					<a id = "backToHome1" href="#home" style="color:black">回上層</a>				
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+
+
+	<div class="site-wrapper" id = "why">
+		<div class="site-wrapper-inner">
+		
+		<br><br>
+			<div class = "row">
+				<div class = "col-md-4">
+					<h2 > <br><br>為什麼選擇台大醫技系? </h2>
+				</div>
+				<div class = "col-md-4">
+		          	<div class="panel panel-default" style="font-size:15px">
+		            	<div class="panel-heading">
+		              		<h3 class="panel-title">醫學專業</h3>
+		            	</div>
+		            	<div class="panel-body">
+              				本系位於醫學院內，可與全國最優秀的同學切磋琢磨醫學，且有臺大附設醫院及台大校內各研究單位之資源，學生能夠接觸最佳之醫學學習平台。
+            			</div>
+          			</div>					
+				</div>
+				
+				<div class = "col-md-4">
+		          	<div class="panel panel-default" style="font-size:15px">
+		            	<div class="panel-heading">
+		              		<h3 class="panel-title">國家法律保障的醫檢師專業</h3>
+		            	</div>
+		            	<div class="panel-body">
+              				只有完成基礎課程及臨床實習的醫技系畢業生才具備參加國家級專門職業及技術人員-醫事檢驗師類科高等考試資格。考試及格取得醫檢師職照才可在各醫療單位執行各類醫學檢驗。
+            			</div>
+          			</div>									
+				</div>
+				
+			</div>
+			<div class = "row">	
+				<div class = "col-md-4"></div>			
+				<div class = "col-md-4">
+		          	<div class="panel panel-default" style="font-size:15px">
+		            	<div class="panel-heading">
+		              		<h3 class="panel-title">最優秀的師資及設備</h3>
+		            	</div>
+		            	<div class="panel-body">
+              				本系採小班、小組教學，並在全國首屈一指台大醫院實習，因此可獲得最紮實的醫學檢驗專業訓練。
+            			</div>
+          			</div>				
+				</div>	
+				<!-- <div class = "col-xs-1.5"></div>							 -->
+
+				<div class = "col-md-4">
+		          	<div class="panel panel-default" style="font-size:15px">
+		            	<div class="panel-heading">
+		              		<h3 class="panel-title">臺灣大學為各領域齊全之綜合大學</h3>
+		            	</div>
+		            	<div class="panel-body">
+              				擁有豐富資源及自由學風，學生除專業學習外，亦能廣泛接觸各領域之課程以擴展視野，並能學習到社會人文關懷及與不同領域專長的台大頂尖同學一同學習及成長。
+            			</div>
+          			</div>				
+				</div>
+				
+			</div>
+			<div class = "row">
+				<div class = "col-md-4"></div>	
+				<div class = "col-md-4">
+		          	<div class="panel panel-default" style="font-size:15px">
+		            	<div class="panel-heading">
+		              		<h3 class="panel-title">班級人數少</h3>
+		            	</div>
+		            	<div class="panel-body">
+              				同學互動多、感情好，系學會也時常舉辦全系的娛樂活動以及學術活動，聯絡系上師生的感情。
+            			</div>
+          			</div>				
+				</div>
+				<div class = "col-md-4">
+				</div>
+
+				
+			</div>
+				
+
+			
+
+			<div align="right">	
+				<a href="#feature" id = "featureBtn" class="btn btn-lg btn-default" ><b>醫技系簡介</b></a>
+			</div>
+									
+		</div>	
+	</div>
+
+
+
+		<div class="site-wrapper" id = "feature">
+		<div class="site-wrapper-inner">
+			
+			
+
+			<div class = "row">
+				<div class = "col-md-4">
+				<br><br>
+					<h2>本系簡介</h2>
+				</div>
+				<div class = "col-md-4">		
+	
+						<p >
+						<div style="font-size:20px;text-indent: 50px;" align="left"> 
+
+						臺灣大學<b>「醫學檢驗暨生物技術學系」(簡稱醫技系)</b> 原名「醫事技術學系」，原是為培育「醫事檢驗師」(簡稱醫檢師)所成立的專門科系 (醫檢師的工作請見圖)，因本系培育之學生基礎醫學背景紮實，又具備相當研究能力，在研究領域及生物技術相關產業發展亦十分優秀，因此將系名更改為更貼切的<b>「醫學檢驗暨生物技術學系」</b>。本系的宗旨是培育醫檢英才，創新生技研發。本系創系60年來，畢業生逾千名，除在醫療院所從事醫學檢驗的醫檢師外，國內外大學醫技系或生物醫學相關系所的教學及研究、研究機構、衛生福利政府機關、生物技術相關產業等均可見本系畢業生的卓越表現及貢獻。
+
+						</div>
+						</p>
+				</div>
+				<div class = "col-md-4">
+				<br><br>
+					<p>醫技系領域圖</p>
+					<br>
+					<div id="pic01" onClick= "this.dialog()">
+
+						<img src="chart.png" class="img-rounded" alt="Cinque Terre"   style="   width: 100%;height: auto;" > 
+					</div>	
+				</div>
+			</div>
+										
+				
+
+				
+
+			<div align="right">	
+				<a href="#teach" id = "teachBtn" class="btn btn-lg btn-default" ><b>本系教學</b></a>
+			</div>			
+			
+				
+				
+				
+
+		</div>
+	</div>	
+
+
+	<div class="site-wrapper" id = "teach">
+		<div class="site-wrapper-inner">
+			<br>
+			<div class = "row">
+				<div class = "col-md-4">
+				<br><br><br><br><br><br>
+					<h2> 教學</h2>
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+					<br><br>
+						<h3><span class="label label-info"><b>目標</b></span></h3><br>
+						<p style="font-size:20px">1. 培育全方位醫檢專業人才</p>
+						<p style="font-size:20px">2. 培育多元思考之醫學生物技術專業人才</p><br> 
+						<h3><span class="label label-info"><b>課程</b></span></h3>
+						<p style="font-size:20px ;text-indent: 50px;">本系大學部的演講、實驗及實習課程涵蓋醫學檢驗及生物技術兩方面之訓練，大一主要是共同課程與基礎科學知識的課程，大二為基礎醫學相關課程。待奠定基礎知識後，大三則進入臨床醫學檢驗課程的演講與相關實驗。大四上學期分組於台大醫院檢驗醫學部實習，大四下學期修習有關生物技術等相關的課程及實習。本系所有實驗課均1-2人一組，每人均須自己操作。</p> 						
+					</div>
+ 						
+				</div>
+				<div class = "col-md-4">
+					<div>
+					<br>
+						<div class="list-group">
+            				<a  class="list-group-item">
+              				<h4 class="list-group-item-heading"><b>共同課程</b></h4>
+              				<p class="list-group-item-text">國文、外文、歷史、本國憲法與公民教育領域等</p>
+            				</a>
+            				<a  class="list-group-item">
+              				<h4 class="list-group-item-heading"><b>基礎科學相關課程</b></h4>
+              				<p class="list-group-item-text">含普通生物、普通化學、分析化學、有機化學、微積分等</p>
+            				</a>
+            				<a  class="list-group-item">
+              				<h4 class="list-group-item-heading"><b>基礎醫學相關課程</b></h4>
+              				<p class="list-group-item-text">生物化學、解剖學、生理學、微生物學及免疫學、寄生蟲學(以上皆含搭配實驗課)、公共衛生概論、生物統計等</p>
+            				</a>
+            				<a  class="list-group-item">
+							<h4 class="list-group-item-heading"><b>基礎醫學相關課程</b></h4>
+              				<p class="list-group-item-text">生物化學、解剖學、生理學、微生物學及免疫學、寄生蟲學(以上皆含搭配實驗課)、公共衛生概論、生物統計等</p>
+            				</a>   
+            				<a  class="list-group-item">
+            				<h4 class="list-group-item-heading"><b>醫學檢驗相關課程</b></h4>
+              				<p class="list-group-item-text">
+              				臨床鏡檢學、臨床生化學、臨床細菌及黴菌學、臨床病毒學、臨床血清免疫學、血液學與臨床血液學、血庫學、臨床生理學、醫學分子檢驗學、組織及病理切片技術、儀器分析、實驗室安全衛生等</p>
+            				</a>
+            				<a  class="list-group-item">
+            				<h4 class="list-group-item-heading"><b>生物技術相關課程</b></h4>
+              				<p class="list-group-item-text">
+              				分子生物學、細菌生物技術學、分子檢驗、生技產業實習等</p>
+            				</a>
+            				<br>
+            				<div align="right">
+							<a href="#teacher" id = "teacherBtn" class="btn btn-lg btn-default" ><b>本系師資</b></a>            				            				
+            				<a href="#course_more" >
+            				<button type="button" class="btn  btn-info" id = "course_more"><b>詳細課程介紹</b></button>
+            				</a>
+            				</div>          				          				
+          				</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</div>
+
+
+	<div class="site-wrapper" id = "course_more" >
+		<div class="site-wrapper-inner">
+			<div class = "row" style="margin-bottom: 20%">
+				<div class = "col-md-3">
+					<h3 style="font-size:16px; color:#1E90FF">大一核心課程</h3>
+					<table class="table table-condensed ">
+					    <thead>
+					      <tr class="success">
+					        <th>課程名稱</th>
+					        <th>學分</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+
+							<tr class="info">
+							   <td>普通化學丙</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>普通化學實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>普通生物學</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>普通生物學實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>微積分</td>
+							   <td>3</td>
+							</tr>
+
+							<tr class="info">
+							   <td>醫技導論</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>醫學與人文(通識)</td>
+							   <td>(2)</td>
+							</tr>
+							<tr class="info">
+							   <td>分析化學丁</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>分析化學實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>有機化學</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>有機化學實驗</td>
+							   <td>1</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class = "col-md-3">
+					<h3 style="font-size:16px; color:#1E90FF">大二核心課程</h3>
+					<table class="table table-condensed ">
+					    <thead>
+					      <tr class="success">
+					        <th>課程名稱</th>
+					        <th>學分</th>
+					      </tr>
+					    </thead>
+					    	<tr class="info">
+							   <td>生物化學乙上</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>生物化學實驗乙上</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>解剖學</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>生理學</td>
+							   <td>4</td>
+							</tr>
+							<tr class="info">
+							   <td>寄生蟲學丙</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>生物化學乙下</td>
+							   <td>2</td>
+							</tr>
+						</table>
+						<h3 style="font-size:16px; color:#1E90FF">大三核心課程</h3>
+						<table class="table table-condensed ">
+						    <thead>
+						      <tr class="success">
+						        <th>課程名稱</th>
+						        <th>學分</th>
+						      </tr>
+						    </thead>
+								<tr class="info">
+								   <td>病理學</td>
+								   <td>2</td>
+								</tr>
+								<tr class="info">
+								   <td>公共衛生概論</td>
+								   <td>2</td>
+								</tr>
+								<tr class="info">
+								   <td>生物統計學</td>
+								   <td>3</td>								   
+								</tr>
+								<tr class="info">
+								   <td>儀器分析</td>
+								   <td>1</td>
+								</tr>
+								<tr class="info">
+								   <td>臨床生化及分子檢驗實驗</td>
+								   <td>2</td>
+								</tr>
+								<tr class="info">
+									<td>醫學分子檢驗學上</td>
+									<td>1</td>
+								</tr>									
+						</table>							
+				</div>		
+
+				<div class = "col-md-3">
+					<h3 style="font-size:16px; color:#1E90FF">大三核心課程(續)</h3>
+					<table class="table table-condensed ">
+					    <thead>
+					      <tr class="success">
+					        <th>課程名稱</th>
+					        <th>學分</th>
+					      </tr>
+					    </thead>
+
+
+							<tr class="info">
+							   <td>臨床生化學</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床生理學</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>血液學與臨床血液學上</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>血液學實驗上</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>微生物學免疫學及實驗</td>
+							   <td>5</td>
+							</tr>
+							<tr class="info">
+							   <td>血庫學</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床鏡檢學</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床鏡檢學實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床細菌及黴菌學實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床細菌及黴菌學</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床病毒學</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床血清免疫學</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>血液學與臨床血液學下</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>血液學實驗下</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>分子生物學</td>
+							   <td>4</td>
+							</tr>
+
+						</table>	
+
+
+
+					    				
+				</div>
+
+				<div class = "col-md-3">
+					<h3 style="font-size:16px; color:#1E90FF">大四核心課程</h3>
+					<table class="table table-condensed ">
+					    <thead>
+					      <tr class="success">
+					        <th>課程名稱</th>
+					        <th>學分</th>
+					      </tr>
+					    </thead>
+							<tr class="info">
+							   <td>臨床鏡檢學實習</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床生理學實習</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床生化學實習</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床細菌及黴菌學實習</td>
+							   <td>4</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床血清免疫學實習</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>血清免疫學分子檢驗實習</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床血液學實習</td>
+							   <td>3</td>
+							</tr>
+							<tr class="info">
+							   <td>血庫實習</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>臨床病毒學實習</td>
+							   <td>2</td>
+							</tr>
+							<tr class="info">
+							   <td>病理學實習</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>病毒學基礎及生物技術實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+							   <td>細菌生物技術學實驗</td>
+							   <td>1</td>
+							</tr>
+							<tr class="info">
+								<td>醫學分子檢驗學下</td>
+								<td>1</td>
+							</tr>	
+						</table>
+				</div>
+				<div  align = "right">	
+					<a href="#teach" id = "teachBtn" class="btn btn-lg btn-default" ><b>回上層</b></a>
+					
+					<a href="#teacher" id = "teacherBtn" class="btn btn-lg btn-default" ><b>本系師資</b></a>
+				</div>				
+			</div>
+		</div>
+	</div>
+			
+
+
+
+
+
+	<div class="site-wrapper" id = "teacher">
+		<div class="site-wrapper-inner">
+			<br>
+			<div class = "row">
+				<div class = "col-md-4">
+				<br><br>
+					<h2> 師資</h2>
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+					<br><br>
+						
+						<p style="font-size:20px; text-indent: 50px;" >本系的師資陣容堅強，教師優秀且均具有醫檢師證照及臨床實務經驗，並掌握醫藥生技產業發展脈動，適時調整教學內容，以配合人才培育之需求。教師的專長涵蓋醫學檢驗各專業領域，教學認真，提供學生紮實的訓練，且透過完整的實驗課程安排，讓學生兼具知識理論與實驗技術的能力。此外，在醫學檢驗專業領域訓練方面，亦有台大附設醫院及校內各研究單位之支援，學生能夠接觸最佳的學習平台。教師的研究除了與其專長領域之醫學檢驗相關外，亦多從事該領域相關之基礎研究或與生物技術相關之研究。本系研究風氣鼎盛，近五年發表百餘篇研究論文於國內外學術期刊，研究成果豐碩。</p> 						
+					</div>	
+				</div>
+				<div class = "col-md-4" >
+					<br><br><br><br>
+					<img src="teacher.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+					<div align="right">
+					<br><br><br>
+
+	
+					<a href="#fund" id = "fundBtn" class="btn btn-lg btn-default" ><b>校外活動獎學金</b></a>
+
+            		<a href="#teacher_more" >
+             		<button type="button" class="btn  btn-info"><b>詳細師資介紹</b></button>
+            		</a>
+            		</div>   
+				</div>
+				
+			</div>
+				
+
+				
+		</div>
+	</div>
+
+
+
+
+		
+
+
+												        
+
+
+
+
+
+
+
+
+
+
+
+	<div class="site-wrapper" id = "teacher_more">
+		<div class="site-wrapper-inner">
+			<br><br>
+			<div class = "row">
+				<div class = "col-md-3">
+					<br><br><br><br>
+					<h2> 專任師資 </h2>
+					<br><br><br><br>
+					<div  align = "center">	
+						<a href="#teacher" id = "teacherBtn" class="btn btn-lg btn-default" ><b>回上層</b></a>
+					</div><br>
+					<div  align = "center">	
+						<a href="#fund" id = "fundBtn" class="btn btn-lg btn-default" ><b>校外活動獎學金</b></a>
+					</div>										
+				</div>
+				<div class = "col-md-9">
+					<br>
+					<table class="table table-condensed ">
+					    <thead>
+					      <tr class="success">
+					        <th>姓名</th>
+					        <th>職稱</th>
+					        <th>研究專長</th>
+					        <th>電話分機</th>
+					        <th>E-mail</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr class="info">
+					        <td>鄧麗珍</td>
+					        <td>教授兼系主任</td>
+					        <td>臨床細菌學、基因體學</td>
+					        <td>23123456-66918</td>
+					        <td>ljteng@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>李君男</td>
+					        <td>教授</td>
+					        <td>病毒學、病毒疫苗及分子檢驗試劑研發</td>
+					        <td>23123456-66905</td>
+					        <td>cnalee@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>林淑華</td>
+					        <td>教授</td>
+					        <td>血液凝固學、轉殖動物學、分子生物學</td>
+					        <td>23123456-66927/66907</td>
+					        <td>mtshuwha@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>林亮音</td>
+					        <td>教授</td>
+					        <td>血液腫瘤學、醫學分子檢驗學、轉譯醫學檢驗</td>
+					        <td>23123456-67342</td>
+					        <td>lilin@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>張淑媛</td>
+					        <td>教授</td>
+					        <td>病毒學、分子生物學</td>
+					        <td>23123456-66908</td>
+					        <td>sychang@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>俞松良</td>
+					        <td>教授</td>
+					        <td>微生物學、基因體學、腫瘤醫學</td>
+					        <td>23123456-66931/88697</td>
+					        <td>slyu@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>方偉宏</td>
+					        <td>副教授</td>
+					        <td>生物化學、核酸修復</td>
+					        <td>23123456-66926</td>
+					        <td>whfang@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>廖淑貞</td>
+					        <td>副教授</td>
+					        <td>細菌分子生物學</td>
+					        <td>23123456-66911</td>
+					        <td>sjliaw@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>楊雅倩</td>
+					        <td>副教授</td>
+					        <td>分子腫瘤學、免疫學</td>
+					        <td>23123456-66915</td>
+					        <td>ycyangntu@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>莊雅惠</td>
+					        <td>副教授</td>
+					        <td>免疫學</td>
+					        <td>23123456-66906</td>
+					        <td>yahuichuang@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>胡忠怡</td>
+					        <td>助理教授</td>
+					        <td>血液學、分子生物學、醫學分子檢驗學</td>
+					        <td>23123456-66914</td>
+					        <td>jcyhu@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>張雅雯</td>
+					        <td>助理教授</td>
+					        <td>臨床生化學</td>
+					        <td>23123456-66909</td>
+					        <td>ywchang364@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>邱浩傑</td>
+					        <td>助理教授</td>
+					        <td>新藥開發、臨床細菌學、醫學分子檢驗學、實驗室生物安全</td>
+					        <td>23123456-66902/88612</td>
+					        <td>hcchiu@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>蘇剛毅</td>
+					        <td>助理教授</td>
+					        <td>臨床生化學、分子檢驗學、癌症生物學</td>
+					        <td>23123456-66910/88697</td>
+					        <td>suky@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>劉旻禕</td>
+					        <td>助理教授</td>
+					        <td>病毒學、分子生物學、臨床病毒學</td>
+					        <td>23123456-66903</td>
+					        <td>mliu@ntu.edu.tw</td>
+					      </tr>
+					      <tr class="info">
+					        <td>吳瑞菁</td>
+					        <td>助理教授</td>
+					        <td>分子生物學</td>
+					        <td>23123456-66904/66920</td>
+					        <td>juichingwu@ntu.edu.tw</td>
+					      </tr>
+
+					    </tbody>
+					  </table>			
+				</div>
+				
+			</div>
+			
+				
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="site-wrapper" id = "fund">
+		<div class="site-wrapper-inner">
+			<br>
+			<div class = "row">
+				<div class = "col-md-4">
+				<br><br><br><br><br>
+					<h2>校外活動及獎助學金</h2>
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+					<br><br>
+						<h3><span class="label label-info"><b>獎助學金</b></span></h3><br>
+						<h4 style="font-size:20px"><b>1. 大學部學生成績優異者可申請下列獎助學金：</b></h4>
+						<p style="font-size:20px;text-indent: 50px;">美國杜克基金獎學金 </p>
+						<p style="font-size:20px;text-indent: 50px;">鍾志良先生紀念獎學金</p>
+						<p style="font-size:20px;text-indent: 50px;">陳森輝教授獎（助）學金 </p>
+						<p style="font-size:20px;text-indent: 50px;">徐賢樂女士醫學清寒獎學金 </p>
+						<p style="font-size:20px;text-indent: 50px;">繡山清寒助學金 </p><br> 
+						<h4 style="font-size:20px"><b>2. 為鼓勵學術論文發表，本系另訂定「論文獎勵辦法」。</b></h4>	
+										
+					</div>	
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+						<br><br>
+						<h3><span class="label label-info"><b>豐富多元的校內外活動</b></span></h3><br>
+						<p style="font-size:20px;">1. <b>學生自行組織和運作系學會</b>，並規劃精彩活動，包括：醫技之夜、迎新宿營、全系導生會、系遊、系運動會、系烤肉會等。於活動中增進各年級同學間和老師間的情誼，同時培養同學合作、領導與規劃的能力。</p><br>
+						<p style="font-size:20px;">2. <b>全國十四所醫技系</b>之大型運動盃賽，以<b>球</b>會友、聯絡各校同學感情。</p><br>
+						<p style="font-size:20px;">3.  參與<b>台灣醫事檢驗學會年會之醫技學生論壇</b>，進行各校同學之學術交流。</p>
+
+						<br><br><br>
+						<div align="right">
+							<a href="#graduate" id = "graduateBtn" class="btn btn-lg btn-default" ><b>畢業出路</b></a>
+						</div>
+
+					</div>
+				
+			</div>
+
+									
+		</div>
+	</div>
+	</div>
+
+	
+	
+	
+	
+	
+	
+	<div class="site-wrapper" id = "graduate">
+		<div class="site-wrapper-inner">
+			<br>
+			<div class = "row">
+				<div class = "col-md-4">
+				<br><br><br><br><br>
+					<h2>畢業出路</h2>
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+					<br><br>
+						<h3><span class="label label-info">1. 經由國家考試取得<b>醫檢師執照</b></span></h3>
+						
+						<p style="font-size:20px">可於各級醫療院所之醫學檢驗部門執業</p>
+						<p style="font-size:20px">可於生技公司實驗室或生殖中心實驗室從事醫學檢驗工作</p>
+						<p style="font-size:20px">可擔任檢驗主管及職務和檢驗中心負責人 </p>
+						<br>
+						<h3><span class="label label-info">2. 投入<b>生物醫學</b>和<b>生技產業界</b></span></h3>
+						<p style="font-size:20px">中央研究院、國家衛生研究院、工業技術研究院</p>
+						<p style="font-size:20px">
+						本國和外商之儀器試藥公司、藥廠和生技公司</p>
+						<p style="font-size:20px">
+						擔任研發人員、產品技術專員、臨床試驗專員以及經營管理者</p>
+
+				
+
+					</div>	
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+						<br><br>
+						<h3><span class="label label-info">3. 於中央或地方政府相關機關工作</span></h3>
+						<p style="font-size:20px">衛生福利部疾病管制署、食品藥物管理署、法務部調查局鑑識科學處、衛生局</p> 
+						<h3><span class="label label-info">4. 繼續升學</span></h3>
+						<p style="font-size:20px">
+						本系畢業生於各校研究所錄取率皆非常高</p>
+						<p style="font-size:20px">
+					
+						許多系友在取得國內外知名大學之碩博士學位後，已進入學術機構擔任教職和研究員，於學術研究上有非常傑出的表現</p>
+				
+						<br>
+						<h3>本系完整和嚴格的訓練培養能讓畢業生<b>勝任各類生物醫學相關之檢驗、研究發展以及經營管理的工作發展!!</b></h3><br>		
+
+						<div align="right">
+							<a href="#entry" id = "entryBtn" class="btn btn-lg btn-default" ><b>入學管道</b></a>
+						</div>
+					</div>
+				
+				</div>	
+		</div>
+	</div>
+	</div>
+
+
+		
+	
+	<div class="site-wrapper" id = "entry">
+		<div class="site-wrapper-inner">
+			<br>
+			<div class = "row">
+				<div class = "col-md-4">
+				<br>
+					<h2>入學方式</h2>
+				</div>
+				<div class = "col-md-4" align="left">
+					<div>
+					<br><br>
+						<h2><b>105學年入學標準</b></h2>
+						<h3><span class ="label label-info">A. 甄選入學: 憑學科能力測驗成績</span></h3>
+						<br>
+						<p style="font-size:20px">個人申請名額 12 名</p>
+						<p style="font-size:20px">繁星推薦名額  4 名</p>
+						<br>
+						<h3><span class="label label-info">B. 大學指定科目考試成績，選填志願分發</span></h3>
+				
+
+					</div>	
+				</div>
+				<div class = "col-md-4" align="left">
+					<br><br>
+					<h2><b>招生入學簡章連結</b></span></h2>
+						<p>(報名資訊以台大校總區研教組招生簡章為準)</p>
+						<br>
+						<p><a style="color:#1E90FF;font-size:20px" href = "https://dl.dropboxusercontent.com/u/44853757/cover/104%E7%94%84%E8%A9%A6.pdf">104學年度碩士 班甄試招生簡介</a></p>
+						<p><a style="color:#1E90FF;font-size:20px" href = "https://dl.dropboxusercontent.com/u/44853757/cover/%E5%8D%9A%E5%A3%AB%E7%8F%AD%E7%94%84%E8%A9%A6(104).pdf">104學年度博士班 甄試招生簡介</a></p>
+						<p><a style="color:#1E90FF;font-size:20px" href ="https://dl.dropboxusercontent.com/u/44853757/cover/104%E7%A2%A9%E6%8B%9B%E7%B0%A1%E7%AB%A0.pdf">104學年度碩士 班一般生(含在職生)招生簡介</a></p>
+						<br><br><br>
+						<div align="right">
+							<a href="#" id = "backToIndex" class="btn btn-lg btn-default" ><b>回首頁</b></a>
+						</div>
+					</div>
+				
+				</div>
+
+									
+		</div>
+	</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  </body>
+</html>
