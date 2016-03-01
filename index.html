@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1; ">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; ">
 
 	
 
@@ -36,15 +36,13 @@
     <!-- <![endif] -->
 	<script >
 
-
-
 		$(document).ready(function(){
 			
-			$("h1#indexId").hide();
+			$("h1#indexId1").hide();
 			$("h3#indexId").hide();
 			$("a#indexIdBtn").hide();
 			$("img#indexId").hide();
-			$("h1#indexId").fadeIn(3500);
+			$("h1#indexId1").fadeIn(3500);
 			$("a#indexIdBtn").fadeIn(3500);
 			$("h3#indexId").fadeIn(6000);
 			$("img#indexId").fadeIn(4000);
@@ -173,32 +171,24 @@
                     scrollTop: $("#entry").offset().top
                 }, 500);				
 			});
-			// $("button#course_more").click(function(){
+			$("button#course_more_btn").click(function(){
 
-   //              $('html, body').animate({
-   //                  scrollTop: $("#course_more").offset().top
-   //              }, 500);				
-			// });			
+                $('html, body').animate({
+                    scrollTop: $("#course_more").offset().top
+                }, 500);				
+			});	
+			$("button#teacher_more_btn").click(function(){
 
-
+                $('html, body').animate({
+                    scrollTop: $("#teacher_more").offset().top
+                }, 500);				
+			});					
+		
 			$("a#homeBtn").click(function(){
 				$("li").removeClass("active");
-			});				
-
-			// $("div#feature").scroll(function(event){
-			// 	$("li").removeClass("active");
-			// 	$("li#barItem3").addClass("active");
-			// 	$alert(event.pageX);				
-			// });
-
-		
+			});					
    });
-
-		
-	</script>  
-
-    
-
+	</script> 
   </head>
 
 
@@ -216,7 +206,7 @@
       <div class="container">
         <div class="navbar-header">
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -226,20 +216,17 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
         	
-          		<ul class="nav navbar-nav navbar-right" >
+          		<ul class="nav navbar-nav " >
           		
       				<li id = "barItem1" class="active"><a href="http://www.mc.ntu.edu.tw/department/clsmb/" >回醫技系首頁</a></li>
-	      			<li id = "barItem2" ><a href="#why" data-toggle="collapse" data-target="#navbar.in" >為什麼選擇醫技系</a></li>
-	      			<li id = "barItem3" ><a href="#feature" data-toggle="collapse" data-target="#navbar.in">本系簡介</a></li>
-	      			<li id = "barItem4"><a href="#teach" data-toggle="collapse" data-target="#navbar.in">教學</a></li>	
-	      			<li id = "barItem5"><a href="#teacher" data-toggle="collapse" data-target="#navbar.in">師資</a></li>
-	      			<li id = "barItem6"><a href="#fund" data-toggle="collapse" data-target="#navbar.in">校內外活動&獎學金</a></li>
-	      			<li id = "barItem7"><a href="#graduate" data-toggle="collapse" data-target="#navbar.in">畢業出路</a></li>
-	      			<li id = "barItem8"><a href="#entry" ddata-toggle="collapse" data-target="#navbar.in">入學管道</a></li>
+	      			<li id = "barItem2" ><a data-toggle="collapse" data-target="#navbar.in" >為什麼選擇醫技系</a></li>
+	      			<li id = "barItem3" ><a  data-toggle="collapse" data-target="#navbar.in">本系簡介</a></li>
+	      			<li id = "barItem4"><a data-toggle="collapse" data-target="#navbar.in">教學</a></li>	
+	      			<li id = "barItem5"><a  data-toggle="collapse" data-target="#navbar.in">師資</a></li>
+	      			<li id = "barItem6"><a  data-toggle="collapse" data-target="#navbar.in">校內外活動&獎學金</a></li>
+	      			<li id = "barItem7"><a  data-toggle="collapse" data-target="#navbar.in">畢業出路</a></li>
+	      			<li id = "barItem8"><a  ddata-toggle="collapse" data-target="#navbar.in">入學管道</a></li>
       			</ul>
-
-      		
-
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -247,9 +234,7 @@
 
     <div class="site-wrapper" >
         <div class="site-wrapper-inner" id = "home">
-	        <div class="cover-container">
-
-					         	
+	        <div class="cover-container">					         	
 				<div class="inner cover" >
 				<br><br>
 				
@@ -258,7 +243,7 @@
 							<!-- <div class = "tab-content"> -->
 								<div>
 									<div>							
-										<h1 id = "indexId" class="cover-heading" style="font-size:250%;">
+										<h1 id = "indexId1" class="cover-heading">
 									<!-- 	<img src="title.png" style="width: 75%;height: auto;"> -->
 										醫學為生命創造奇蹟<br><br>
 										醫技為醫學指點迷津<br>
@@ -269,17 +254,13 @@
 										<!-- <h3 id = "indexId">
 										<img class="img-rounded" id = "indexId" alt="Cinque Terre" src="icon.png"height="70">
 										<img  src="name.png" style="width: 100%;height: auto;" alt="國立台灣大學醫學院醫學檢驗暨生物技術學系" /></h3> -->
-										<a href="#more" id = "indexIdBtn" class="btn btn-lg btn-default" >了解更多</a>	
+										<a  id = "indexIdBtn" class="btn btn-lg btn-default" >了解更多</a>	
 
 									</div>	
 								</div>						
-							<!-- </div>  -->
 						</div>
-
 					</div>		
-					
 				</div>
-
         	</div>
 						<div align="bottom">
 <!-- 								<footer align="right">
@@ -291,8 +272,6 @@
       	</div>
     </div>
 
-    
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -301,12 +280,7 @@
     <script src="./assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
-	
-	
-	
-	
-	
-	<div class="site-wrapper" id = "more">
+		<div class="site-wrapper" id = "more">
 		<div class="site-wrapper-inner">
 			<br><br>
 			<div class = "row">
@@ -320,25 +294,25 @@
 						來醫技系，你將有機會了解醫學的奧妙及加入最有意義的醫藥行業。 </p>
 						<br>
 						
-					<a href="#why" id = "WhyBtn" class="btn btn-lg btn-default" ><b>為什麼選擇台大醫技?</b></a>						
+					<a id = "WhyBtn" class="btn btn-lg btn-default" ><b>為什麼選擇台大醫技?</b></a>						
 
 					<br><br>
-					<a id = "backToHome1" href="#home" style="color:black">回上層</a>				
+					<a id = "backToHome1" style="color:black">回上層</a>				
 				</div>
 			</div>	
 		</div>
 	</div>
 	
-
-
 	<div class="site-wrapper" id = "why">
 		<div class="site-wrapper-inner">
 		
-		<br><br>
+		<br><br><br>
 			<div class = "row">
 				<div class = "col-md-4">
 					<h2 > <br><br>為什麼選擇台大醫技系? </h2>
+					<br>
 				</div>
+
 				<div class = "col-md-4">
 		          	<div class="panel panel-default" style="font-size:15px">
 		            	<div class="panel-heading">
@@ -361,9 +335,9 @@
           			</div>									
 				</div>
 				
-			</div>
+			</div><br>
 			<div class = "row">	
-				<div class = "col-md-4"></div>			
+				<div class = "col-md-4"><img src="./why.jpg" width="150px" id = "whyImage" ></div>			
 				<div class = "col-md-4">
 		          	<div class="panel panel-default" style="font-size:15px">
 		            	<div class="panel-heading">
@@ -387,7 +361,7 @@
           			</div>				
 				</div>
 				
-			</div>
+			</div><br>
 			<div class = "row">
 				<div class = "col-md-4"></div>	
 				<div class = "col-md-4">
@@ -401,29 +375,20 @@
           			</div>				
 				</div>
 				<div class = "col-md-4">
-				</div>
-
-				
+				</div>			
 			</div>
-				
-
-			
 
 			<div align="right">	
-				<a href="#feature" id = "featureBtn" class="btn btn-lg btn-default" ><b>醫技系簡介</b></a>
-			</div>
-									
+				<a  id = "featureBtn" class="btn btn-lg btn-default" ><b>醫技系簡介</b></a>
+			</div>									
 		</div>	
 	</div>
-
-
 
 		<div class="site-wrapper" id = "feature">
 		<div class="site-wrapper-inner">
 			
-			
-
-			<div class = "row">
+		
+				<div class = "row">
 				<div class = "col-md-4">
 				<br><br>
 					<h2>本系簡介</h2>
@@ -449,45 +414,36 @@
 				</div>
 			</div>
 										
-				
-
-				
-
 			<div align="right">	
-				<a href="#teach" id = "teachBtn" class="btn btn-lg btn-default" ><b>本系教學</b></a>
+				<a  id = "teachBtn" class="btn btn-lg btn-default" ><b>本系教學</b></a>
 			</div>			
-			
-				
-				
-				
-
 		</div>
 	</div>	
 
-
 	<div class="site-wrapper" id = "teach">
-		<div class="site-wrapper-inner">
+		  <div class="site-wrapper-inner">
 			<br>
-			<div class = "row">
-				<div class = "col-md-4">
-				<br><br><br><br><br><br>
+			   <div class = "row">
+				    <div class = "col-md-4">
+				      
 					<h2> 教學</h2>
-				</div>
-				<div class = "col-md-4" align="left">
-					<div>
-					<br><br>
-						<h3><span class="label label-info"><b>目標</b></span></h3><br>
-						<p style="font-size:20px">1. 培育全方位醫檢專業人才</p>
-						<p style="font-size:20px">2. 培育多元思考之醫學生物技術專業人才</p><br> 
-						<h3><span class="label label-info"><b>課程</b></span></h3>
-						<p style="font-size:20px ;text-indent: 50px;">本系大學部的演講、實驗及實習課程涵蓋醫學檢驗及生物技術兩方面之訓練，大一主要是共同課程與基礎科學知識的課程，大二為基礎醫學相關課程。待奠定基礎知識後，大三則進入臨床醫學檢驗課程的演講與相關實驗。大四上學期分組於台大醫院檢驗醫學部實習，大四下學期修習有關生物技術等相關的課程及實習。本系所有實驗課均1-2人一組，每人均須自己操作。</p> 						
-					</div>
- 						
-				</div>
+				    </div>
+				    <div class = "col-md-4" align="left">
+					   <div>
+					   
+    						<h3><span class="label label-info"><b>目標</b></span></h3>
+    						<p style="font-size:20px">1. 培育全方位醫檢專業人才</p>
+    						<p style="font-size:20px">2. 培育多元思考之醫學生物技術專業人才</p>
+    						<h3><span class="label label-info"><b>課程</b></span></h3>
+    						<p style="font-size:20px ;text-indent: 50px;">本系大學部的演講、實驗及實習課程涵蓋醫學檢驗及生物技術兩方面之訓練，大一主要是共同課程與基礎科學知識的課程，大二為基礎醫學相關課程。待奠定基礎知識後，大三則進入臨床醫學檢驗課程的演講與相關實驗。大四上學期分組於台大醫院檢驗醫學部實習，大四下學期修習有關生物技術等相關的課程及實習。本系所有實驗課均1-2人一組，每人均須自己操作。</p> 						
+					   </div>
+            		</div>
+
+ 					
 				<div class = "col-md-4">
 					<div>
-					<br>
-						<div class="list-group">
+					   
+						    <div class="list-group">
             				<a  class="list-group-item">
               				<h4 class="list-group-item-heading"><b>共同課程</b></h4>
               				<p class="list-group-item-text">國文、外文、歷史、本國憲法與公民教育領域等</p>
@@ -500,8 +456,7 @@
               				<h4 class="list-group-item-heading"><b>基礎醫學相關課程</b></h4>
               				<p class="list-group-item-text">生物化學、解剖學、生理學、微生物學及免疫學、寄生蟲學(以上皆含搭配實驗課)、公共衛生概論、生物統計等</p>
             				</a>
-
-            				</a>   
+   
             				<a  class="list-group-item">
             				<h4 class="list-group-item-heading"><b>醫學檢驗相關課程</b></h4>
               				<p class="list-group-item-text">
@@ -512,24 +467,27 @@
               				<p class="list-group-item-text">
               				分子生物學、細菌生物技術學、分子檢驗、生技產業實習等</p>
             				</a>
-            				<br>
+            				
             				<div align="right">
-							<a href="#teacher" id = "teacherBtn" class="btn btn-lg btn-default" ><b>本系師資</b></a>            				            				
-            				<a href="#course_more" >
-            				<button type="button" class="btn  btn-info" id = "course_more"><b>詳細課程介紹</b></button>
-            				</a>
-            				</div>          				          				
-          				</div>
-					</div>
-				</div>
-			</div>				
-		</div>
-	</div>
+							       <a  id = "teacherBtn" class="btn btn-lg btn-default" ><b>本系師資</b></a>            				            				
+            				  <a >
+            				    <button type="button" class="btn  btn-info" id = "course_more_btn"><b>詳細課程介紹</b></button>
+            				  </a>
+                    </div>
+                  </div> 
+                </div>
+             </div>
+         </div>   
+       </div>
+     </div>            
+     <br>   
 
 
 	<div class="site-wrapper" id = "course_more" >
+
 		<div class="site-wrapper-inner">
-			<div class = "row" style="margin-bottom: 20%">
+		<br><br>
+			<div class = "row" >
 				<div class = "col-md-3">
 					<h3 style="font-size:16px; color:#1E90FF">大一核心課程</h3>
 					<table class="table table-condensed ">
@@ -621,6 +579,10 @@
 							   <td>3</td>
 							</tr>
 							<tr class="info">
+							   <td>微生物學免疫學及實驗</td>
+							   <td>5</td>
+							</tr>							
+							<tr class="info">
 							   <td>生物化學乙下</td>
 							   <td>2</td>
 							</tr>
@@ -645,6 +607,7 @@
 								   <td>生物統計學</td>
 								   <td>3</td>								   
 								</tr>
+
 								<tr class="info">
 								   <td>儀器分析</td>
 								   <td>1</td>
@@ -653,10 +616,7 @@
 								   <td>臨床生化及分子檢驗實驗</td>
 								   <td>2</td>
 								</tr>
-								<tr class="info">
-									<td>醫學分子檢驗學上</td>
-									<td>1</td>
-								</tr>									
+								
 						</table>							
 				</div>		
 
@@ -664,13 +624,17 @@
 					<h3 style="font-size:16px; color:#1E90FF">大三核心課程(續)</h3>
 					<table class="table table-condensed ">
 					    <thead>
+
 					      <tr class="success">
 					        <th>課程名稱</th>
 					        <th>學分</th>
 					      </tr>
 					    </thead>
 
-
+							<tr class="info">
+								<td>醫學分子檢驗學上</td>
+								<td>1</td>
+							</tr>	
 							<tr class="info">
 							   <td>臨床生化學</td>
 							   <td>2</td>
@@ -686,10 +650,6 @@
 							<tr class="info">
 							   <td>血液學實驗上</td>
 							   <td>1</td>
-							</tr>
-							<tr class="info">
-							   <td>微生物學免疫學及實驗</td>
-							   <td>5</td>
 							</tr>
 							<tr class="info">
 							   <td>血庫學</td>
@@ -803,9 +763,10 @@
 						</table>
 				</div>
 				<div  align = "right">	
-					<a href="#teach" id = "teachBtn" class="btn btn-lg btn-default" ><b>回上層</b></a>
+					<a id = "teachBtn" class="btn btn-lg btn-default" ><b>回上層</b></a>
 					
-					<a href="#teacher" id = "teacherBtn" class="btn btn-lg btn-default" ><b>本系師資</b></a>
+					<a id = "teacherBtn" class="btn btn-lg btn-default" ><b>本系師資</b></a>
+
 				</div>				
 			</div>
 		</div>
@@ -838,10 +799,10 @@
 					<br><br><br>
 
 	
-					<a href="#fund" id = "fundBtn" class="btn btn-lg btn-default" ><b>校外活動獎學金</b></a>
+					<a id = "fundBtn" class="btn btn-lg btn-default" ><b>校外活動獎學金</b></a>
 
-            		<a href="#teacher_more" >
-             		<button type="button" class="btn  btn-info"><b>詳細師資介紹</b></button>
+            		<a >
+             		<button type="button" id = "teacher_more_btn" class="btn  btn-info"><b>詳細師資介紹</b></button>
             		</a>
             		</div>   
 				</div>
@@ -880,10 +841,10 @@
 					<h2> 專任師資 </h2>
 					<br><br><br><br>
 					<div  align = "center">	
-						<a href="#teacher" id = "teacherBtn" class="btn btn-lg btn-default" ><b>回上層</b></a>
+						<a  id = "teacherBtn" class="btn btn-lg btn-default" ><b>回上層</b></a>
 					</div><br>
 					<div  align = "center">	
-						<a href="#fund" id = "fundBtn" class="btn btn-lg btn-default" ><b>校外活動獎學金</b></a>
+						<a  id = "fundBtn" class="btn btn-lg btn-default" ><b>校外活動獎學金</b></a>
 					</div>										
 				</div>
 				<div class = "col-md-9">
@@ -1060,7 +1021,7 @@
 
 						<br><br><br>
 						<div align="right">
-							<a href="#graduate" id = "graduateBtn" class="btn btn-lg btn-default" ><b>畢業出路</b></a>
+							<a  id = "graduateBtn" class="btn btn-lg btn-default" ><b>畢業出路</b></a>
 						</div>
 
 					</div>
@@ -1122,7 +1083,7 @@
 						<h3>本系完整和嚴格的訓練培養能讓畢業生<b>勝任各類生物醫學相關之檢驗、研究發展以及經營管理的工作發展!!</b></h3><br>		
 
 						<div align="right">
-							<a href="#entry" id = "entryBtn" class="btn btn-lg btn-default" ><b>入學管道</b></a>
+							<a  id = "entryBtn" class="btn btn-lg btn-default" ><b>入學管道</b></a>
 						</div>
 					</div>
 				
@@ -1166,7 +1127,7 @@
 						<p><a style="color:#1E90FF;font-size:20px" href ="https://dl.dropboxusercontent.com/u/44853757/cover/104%E7%A2%A9%E6%8B%9B%E7%B0%A1%E7%AB%A0.pdf">104學年度碩士 班一般生(含在職生)招生簡介</a></p>
 						<br><br><br>
 						<div align="right">
-							<a href="#" id = "backToIndex" class="btn btn-lg btn-default" ><b>回首頁</b></a>
+							<a id = "backToIndex" class="btn btn-lg btn-default" ><b>回首頁</b></a>
 						</div>
 					</div>
 				

@@ -34,7 +34,14 @@ body {
   color: #696969;
   text-align: center;
   font-family: Microsoft JhengHei;
+  overflow-x:hidden;
+
 }
+/*div#home{
+    display: none;
+    opacity:0.0;
+    filter:alpha(opacity=0);     
+}*/
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -128,6 +135,55 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    img#whyImage{
+      display: none;
+    }   
+    a#WhyBtn{
+        display: none;
+    }    
+    a#featureBtn{
+        display: none;
+    }    
+    a#teachBtn{
+        display: none;
+    }    
+    a#teacherBtn{
+        display: none;
+    }    
+    a#backToIndex{
+        display: none;
+    }    
+    a#fundBtn{
+        display: none;
+    }    
+    a#graduateBtn{
+        display: none;
+    }    
+    a#entryBtn{
+        display: none;
+    }    
+ 
+    a#backToHome1{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    h1#indexId1{
+      font-size: 30px;
+    }
+    img#whyImage{
+      display: none;
+    }    
+}
+
+@media (max-width: 350px) {
+    h1#indexId1{
+      font-size: 20px;
+    }
+    img#whyImage{
+      display: none;
+    }    
 }
 
 @media (min-width: 1000px) {
@@ -137,33 +193,33 @@ body {
   .masthead-nav {
     float: right;
   }
-a#homeBtn{
-font-size: 15px;  
-}
-li#barItem1{
-  font-size: 12px;
-}
-li#barItem2{
-  font-size: 12px;
-}  
-li#barItem3{
-  font-size: 12px;
-}  
-li#barItem4{
-  font-size: 12px;
-}  
-li#barItem5{
-  font-size: 12px;
-}    
-li#barItem6{
-  font-size: 12px;
-}  
-li#barItem7{
-  font-size: 12px;
-}  
-li#barItem8{
-  font-size: 12px;
-}  
+  a#homeBtn{
+    font-size: 15px;  
+  }
+  li#barItem1{
+    font-size: 12px;
+  }
+  li#barItem2{
+    font-size: 12px;
+  }  
+  li#barItem3{
+    font-size: 12px;
+  }  
+  li#barItem4{
+    font-size: 12px;
+  }  
+  li#barItem5{
+    font-size: 12px;
+  }    
+  li#barItem6{
+    font-size: 12px;
+  }  
+  li#barItem7{
+    font-size: 12px;
+  }  
+  li#barItem8{
+    font-size: 12px;
+  }  
 }
 
 @media (min-width: 1200px) {
@@ -173,33 +229,33 @@ li#barItem8{
   .masthead-nav {
     float: right;
   }
-a#homeBtn{
-font-size: 20px;  
-}
-li#barItem1{
-  font-size: 17px;
-}
-li#barItem2{
-  font-size: 17px;
-}  
-li#barItem3{
-  font-size: 17px;
-}  
-li#barItem4{
-  font-size: 17px;
-}  
-li#barItem5{
-  font-size: 17px;
-}    
-li#barItem6{
-  font-size: 17px;
-}  
-li#barItem7{
-  font-size: 17px;
-}  
-li#barItem8{
-  font-size: 17px;
-}  
+  a#homeBtn{
+    font-size: 20px;  
+  }
+  li#barItem1{
+    font-size: 17px;
+  }
+  li#barItem2{
+    font-size: 17px;
+  }  
+  li#barItem3{
+    font-size: 17px;
+  }  
+  li#barItem4{
+    font-size: 17px;
+  }  
+  li#barItem5{
+    font-size: 17px;
+  }    
+  li#barItem6{
+    font-size: 17px;
+  }  
+  li#barItem7{
+    font-size: 17px;
+  }  
+  li#barItem8{
+    font-size: 17px;
+  }  
 }
 
 /*
@@ -225,9 +281,15 @@ li#barItem8{
 }
 
 
-/*
- * Affix and center
- */
+@media (min-width: 200px) {
+   div#home{
+    position: relative;
+    top: 80px;
+  }
+
+}
+
+
 
 @media (min-width: 400px) {
   /* Pull out the header and footer */
@@ -238,7 +300,7 @@ li#barItem8{
   .mastfoot {
     position: fixed;
     bottom: 0;
-	font-color:black;
+	  font-color:black;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -250,7 +312,9 @@ li#barItem8{
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+
 }
+
 
 @media (min-width: 992px) {
   .masthead,
